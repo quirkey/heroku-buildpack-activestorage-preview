@@ -49,7 +49,7 @@ APT_OPTIONS="$APT_OPTIONS -o dir::etc::sourcelist=/etc/apt/sources.list"
 
 echo -n 'Downloading packages' | indent
 apt-get $APT_OPTIONS update >/dev/null
-apt-get $APT_OPTIONS -y -d install --reinstall libpoppler-dev poppler-utils zlib1g-dev libmagickwand-dev >/dev/null
+apt-get $APT_OPTIONS -y -d install --reinstall libpoppler-dev poppler-utils zlib1g-dev libgirepository1.0-dev 
 echo -n '.'
 
 SFFMPEG_FILENAME="sffmpeg_${SFFMPEG_VERSION}_amd64.deb"
